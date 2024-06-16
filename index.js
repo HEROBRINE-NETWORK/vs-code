@@ -25,7 +25,7 @@ client.on('ready', async () => {
     const r = new Discord.RichPresence()
         .setApplicationId('1251774905129766932')
         .setType('PLAYING')
-        .setURL('https://youtu.be/dQw4w9WgXcQ?si=7Ga1_K2lgo8ykvPe')
+        .setURL('https://youtu.be/-YUIRdb5Dv8?si=Ai1J62mubREF1zwM')
         .setState('Visual Studio Code')
         .setName('Idling')
         .setDetails(`Sleeping`)
