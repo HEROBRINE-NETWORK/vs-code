@@ -32,7 +32,7 @@ client.on('ready', async () => {
         .setStartTimestamp(Date.now())
         .setAssetsLargeImage('https://cdn.discordapp.com/app-assets/383226320970055681/565945768817590282.webp')
         .setAssetsLargeText('Idling')
-        .setAssetsSmallImage('https://upload.wikimedia.org/wikipedia/commons/f/f3/Visual_Studio_Code_0.10.1_icon.png')
+        .setAssetsSmallImage('https://cdn.discordapp.com/attachments/1245746250104443042/1251783533815660554/1628250995_vscode_story.png?ex=666fd5c3&is=666e8443&hm=a41287b3df5b5c7afc803f84b921a2fc25ac0942f4f426486243b45473bf2e39&')
         .setAssetsSmallText('vs code')
         .addButton('Nextezza', 'https://discord.gg/nextezza-821061664354205806')
     //.addButton('Discord', '');
