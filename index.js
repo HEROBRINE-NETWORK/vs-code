@@ -23,9 +23,9 @@ client.on('ready', async () => {
     console.log(`${client.user.tag} - rich presence started!`);
 
     const r = new Discord.RichPresence()
-        .setApplicationId('')
+        .setApplicationId('1251774905129766932')
         .setType('PLAYING')
-        .setURL('1251774905129766932')
+        .setURL('https://youtu.be/dQw4w9WgXcQ?si=7Ga1_K2lgo8ykvPe')
         .setState('Visual Studio Code')
         .setName('Idling')
         .setDetails(`Sleeping`)
