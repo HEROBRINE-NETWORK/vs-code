@@ -44,7 +44,7 @@ client.on('ready', async () => {
     setInterval(() => {
         const newTime = formatTime();
         if (newTime !== prevTime) {
-            const newDetails = `Discord Server`;
+            const newDetails = `Sleeping with code`;
             r.setDetails(newDetails);
             client.user.setActivity(r);
             prevTime = newTime;
