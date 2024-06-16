@@ -34,8 +34,7 @@ client.on('ready', async () => {
         .setAssetsLargeText('Idling')
         .setAssetsSmallImage('https://cdn.discordapp.com/emojis/1251785678975537172.webp?size=40&quality=lossless')
         .setAssetsSmallText('vs code')
-        .addButton('Nextezza', 'https://discord.gg/nextezza-821061664354205806')
-    //.addButton('Discord', '');
+        .addButton('Nextezza', 'https://discord.gg/nextezza-821061664354205806');
 
     client.user.setActivity(r);
     client.user.setPresence({ status: "idle" }); //dnd, online, idle, offline
@@ -50,6 +49,12 @@ client.on('ready', async () => {
             prevTime = newTime;
         }
     }, 1000);
+});
+
+client.on('messageCreate', message => {
+    if (message.mentions.has(client.user)) {
+        message.react('💀'); // React with skull emoji
+    }
 });
 
 const mySecret = process.env['TOKEN'];
