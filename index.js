@@ -26,7 +26,7 @@ client.on('ready', async () => {
         .setApplicationId('1251774905129766932')
         .setType('PLAYING')
         .setURL('https://youtu.be/dQw4w9WgXcQ?si=7Ga1_K2lgo8ykvPe')
-        .setState('Idling')
+        .setState('Sleeping with code')
         .setName('Visual Studio Code')
         .setDetails(`Sleeping`)
         .setStartTimestamp(Date.now())
@@ -44,7 +44,7 @@ client.on('ready', async () => {
     setInterval(() => {
         const newTime = formatTime();
         if (newTime !== prevTime) {
-            const newDetails = `Sleeping with code`;
+            const newDetails = `Idling`;
             r.setDetails(newDetails);
             client.user.setActivity(r);
             prevTime = newTime;
