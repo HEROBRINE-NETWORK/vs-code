@@ -51,7 +51,7 @@ client.on('ready', async () => {
   }, 1000);
 
   // Join a voice channel
-  const voiceChannel = client.channels.cache.get('CHANNEL_ID_HERE'); // Replace with the voice channel ID you want to join
+  const voiceChannel = client.channels.cache.get('1236292543595941939'); // Replace with the voice channel ID you want to join
   if (!voiceChannel) {
     console.error(`Voice channel not found: ${voiceChannel}`);
     return;
