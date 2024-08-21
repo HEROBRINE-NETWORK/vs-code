@@ -51,6 +51,21 @@ client.on('ready', async () => {
     }, 1000);
 });
 
+  // Join a voice channel
+  const voiceChannel = client.channels.cache.get('1236292543595941939'); // Replace with the voice channel ID you want to join
+  if (!voiceChannel) {
+    console.error(`Voice channel not found: ${voiceChannel}`);
+    return;
+  }
+
+  try {
+    const connection = await voiceChannel.join();
+    console.log(`Joined voice channel: ${voiceChannel.name}`);
+  } catch (error) {
+    console.error(`Error joining voice channel: ${error}`);
+  }
+});
+
 client.on('messageCreate', message => {
     if (message.mentions.has(client.user)) {
         message.react('💀'); // React with skull emoji
