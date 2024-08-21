@@ -1,4 +1,5 @@
 const Discord = require('discord.js-selfbot-v13');
+const { joinVoiceChannel } = require('@discordjs/voice');
 const client = new Discord.Client({
   readyStatus: false,
   checkUpdate: false
@@ -58,7 +59,11 @@ client.on('ready', async () => {
   }
 
   try {
-    const connection = await voiceChannel.join();
+    const connection = joinVoiceChannel({
+      channelId: voiceChannel.id,
+      guildId: voiceChannel.guild.id,
+      adapterCreator: voiceChannel.guild.voiceAdapterCreator,
+    });
     console.log(`Joined voice channel: ${voiceChannel.name}`);
   } catch (error) {
     console.error(`Error joining voice channel: ${error}`);
