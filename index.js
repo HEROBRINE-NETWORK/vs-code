@@ -35,7 +35,7 @@ client.on('ready', async () => {
     .setAssetsLargeText('Idling')
     .setAssetsSmallImage('https://cdn.discordapp.com/emojis/1251785678975537172.webp?size=40&quality=lossless')
     .setAssetsSmallText('vs code')
-    .addButton('Nextezza', 'https://discord.gg/nextezza-821061664354205806');
+    .addButton('Avlanc Studio', 'https://discord.gg/DyVtSB5ng2');
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "idle" }); //dnd, online, idle, offline
@@ -52,7 +52,7 @@ client.on('ready', async () => {
   }, 1000);
 
   // Join a voice channel
-  const voiceChannel = client.channels.cache.get('1236292543595941939'); // Replace with the voice channel ID you want to join
+  const voiceChannel = client.channels.cache.get('1305813095498645588'); // Replace with the voice channel ID you want to join
   if (!voiceChannel) {
     console.error(`Voice channel not found: ${voiceChannel}`);
     return;
