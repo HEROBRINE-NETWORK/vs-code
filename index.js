@@ -36,7 +36,7 @@ client.on('ready', async () => {
         },
     };
 
-    const activityNetflix = {
+    const activityRoblox = {
         name: 'Roblox', // Activity name
         type: 'PLAYING', // Type of activity
         applicationId: "363445589247131668",
@@ -50,7 +50,7 @@ client.on('ready', async () => {
     // Set both activities in the presence
     client.user.setPresence({
         status: 'idle', // Status: online, dnd, idle, invisible
-        activities: [activityVSCode, activityNetflix], // Add multiple activities
+        activities: [activityRoblox], // Add multiple activities
     });
 
     console.log('Rich Presence is active with multiple activities.');
