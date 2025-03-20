@@ -38,13 +38,8 @@ client.on('ready', async () => {
 
     const activityRoblox = {
         name: 'Roblox', // Activity name
-        type: 'PLAYING', // Type of activity
         applicationId: "363445589247131668",
-        timestamps: { start: Date.now() }, // Timestamp for activity
-        assets: {
-            large_image: 'https://cdn.discordapp.com/app-icons/363445589247131668/f2b60e350a2097289b3b0b877495e55f.webp?size=160&keep_aspect_ratio=false', // Replace with your Netflix asset key
-            large_text: 'Roblox', // Hover text for the large image
-        },
+
     };
 
     // Set both activities in the presence
