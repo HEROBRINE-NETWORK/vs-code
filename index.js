@@ -37,12 +37,12 @@ client.on('ready', async () => {
     };
 
     const activityNetflix = {
-        name: 'Netflix', // Activity name
-        type: 'WATCHING', // Type of activity
+        name: 'Roblox', // Activity name
+        type: 'PLAYING', // Type of activity
         timestamps: { start: Date.now() }, // Timestamp for activity
         assets: {
-            large_image: 'https://media.discordapp.net/attachments/1289477245660041237/1333329033169211434/Netflix-Symbol.png?ex=67987eed&is=67972d6d&hm=66951172e8d031b8bb7619e4ec3a4f3250ac832add1605f868db62661b970326&=&format=webp&quality=lossless&width=376&height=376', // Replace with your Netflix asset key
-            large_text: 'Netflix', // Hover text for the large image
+            large_image: 'https://cdn.discordapp.com/app-icons/363445589247131668/f2b60e350a2097289b3b0b877495e55f.webp?size=160&keep_aspect_ratio=false', // Replace with your Netflix asset key
+            large_text: 'Roblox', // Hover text for the large image
         },
     };
 
