@@ -37,8 +37,8 @@ client.on('ready', async () => {
     };
 
     const activityRoblox = {
-        name: 'Roblox', // Activity name
-        applicationId: "363445589247131668",
+        name: 'VALORANT', // Activity name
+        applicationId: "700136079562375258",
 
     };
 
