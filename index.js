@@ -38,14 +38,13 @@ client.on('ready', async () => {
 
     const activityRoblox = {
         name: 'VALORANT', // Activity name
-        applicationId: "700136079562375258",
+        applicationId: "",
 
     };
 
     // Set both activities in the presence
     client.user.setPresence({
         status: 'idle', // Status: online, dnd, idle, invisible
-        activities: [activityRoblox], // Add multiple activities
     });
 
     console.log('Rich Presence is active with multiple activities.');
